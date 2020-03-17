@@ -13,7 +13,7 @@ type Response struct {
 }
 
 // NewResponse creates a new response for returning data
-func newResponse(object interface{}, message string, status int) *Response {
+func NewResponse(object interface{}, message string, status int) *Response {
 	return &Response{
 		Data:    object,
 		Message: message,

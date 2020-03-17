@@ -6,8 +6,9 @@ type health struct {
 	Message string `json:"message"`
 }
 
-func healthcheck() http.HandlerFunc {
-	r := newResponse(
+// HealthCheck : used to test routing
+func HealthCheck() http.HandlerFunc {
+	r := NewResponse(
 		health{"great"},
 		"ok",
 		200,
